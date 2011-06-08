@@ -1,8 +1,20 @@
+PADRINO_ENV = 'test' unless defined?(PADRINO_ENV)
+require File.expand_path(File.dirname(__FILE__) + "/../config/boot")
+require File.join(File.dirname(__FILE__),'blueprints')
+require 'riot/rr'
+
+Riot.pretty_dots
+
+DatabaseCleaner.strategy = :truncation
+
+# Support Files
+Dir.glob(File.expand_path('../support/*.rb',__FILE__)).each { |f| require f }
+
+
 # Specify your app using the #app helper inside a context.
 # Takes either an app class or a block argument.
 # app { Padrino.application }
 # app { Shortener.tap { |app| } }
-
 class Riot::Situation
   include Rack::Test::Methods
   ##

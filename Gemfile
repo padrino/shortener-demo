@@ -15,6 +15,7 @@ gem 'bson_ext', :require => "mongo"
 
 # Test requirements
 group :test do
+  gem 'database_cleaner'
   gem 'machinist'
   gem 'machinist_mongo', :require => 'machinist/mongoid'
   gem 'rr'
