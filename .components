@@ -1,0 +1,7 @@
+--- 
+:orm: mongoid
+:test: riot
+:mock: rr
+:script: jquery
+:renderer: haml
+:stylesheet: scss

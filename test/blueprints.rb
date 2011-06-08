@@ -1,0 +1,2 @@
+Sham.define do
+end
