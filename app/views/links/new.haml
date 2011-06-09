@@ -1,0 +1,6 @@
+.link
+  - form_for :link, url(:links, :create), :method => 'post' do |f|
+    = f.label :url
+    = f.error_message_on :url
+    = f.text_field :url
+    = f.submit
