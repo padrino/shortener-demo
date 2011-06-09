@@ -12,6 +12,7 @@ gem 'sass'
 gem 'haml'
 gem 'mongoid', '~>2.0'
 gem 'bson_ext', :require => "mongo"
+gem 'rabl'
 
 # Test requirements
 group :test do

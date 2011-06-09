@@ -32,3 +32,5 @@ end
 
 # Mounts the core application for this project
 Padrino.mount("Shortener").to('/')
+
+Padrino.mount("Api").to("/api")
