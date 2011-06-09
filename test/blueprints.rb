@@ -8,3 +8,13 @@ Sham.define do
   body                { Faker::Lorem.words(8).join(' ') }
   tag_name            { Faker::Lorem.words(1).join }
 end
+
+Account.blueprint do
+  username                { Sham.username }
+  name                    { Sham.first_name }
+  sure_name               { Sham.last_name }
+  email                   { Sham.email }
+  password                { 'testyy' }
+  password_confirmation   { 'testyy' }
+  role                    { 'admin' }
+end

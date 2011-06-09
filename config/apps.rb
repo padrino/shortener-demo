@@ -34,3 +34,4 @@ end
 Padrino.mount("Shortener").to('/')
 
 Padrino.mount("Api").to("/api")
+Padrino.mount("Admin").to("/admin")
