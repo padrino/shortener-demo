@@ -4,7 +4,8 @@
     = @link.url
   %h2
     slug:
-    = @link.slug
+    = link_to @link.slug, url(:main, :slug, :slug => @link.slug)
   %h2
     visitors:
+    %ul
     = partial 'links/visitor', :collection => @link.visitors
