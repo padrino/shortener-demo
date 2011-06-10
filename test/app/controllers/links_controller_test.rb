@@ -8,10 +8,13 @@ context "LinksController" do
   context "GET :show" do
     setup do
       link = Link.create :url => 'http://www.google.com'
+      link.visitors.create :ip => '127.0.0.1', :referrer => 'http://www.padrinorb.com'
       get "/links/show/#{link.slug}"
     end
 
     asserts(:body).matches %r{google\.com}
+    asserts(:body).matches %r{127\.0\.0\.1}
+    asserts(:body).matches %r{padrinorb\.com}
     asserts(:status).equals 200
   end
 

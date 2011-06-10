@@ -5,3 +5,6 @@
   %h2
     slug:
     = @link.slug
+  %h2
+    visitors:
+    = partial 'links/visitor', :collection => @link.visitors
