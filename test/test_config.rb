@@ -17,6 +17,7 @@ Dir.glob(File.expand_path('../support/*.rb',__FILE__)).each { |f| require f }
 # app { Shortener.tap { |app| } }
 class Riot::Situation
   include Rack::Test::Methods
+  include Capybara
   ##
   # You can handle all padrino applications using instead:
   #   Padrino.application

@@ -26,6 +26,8 @@ group :test do
   gem 'faker'
   gem 'watchr'
   gem 'rack-test', :require => "rack/test"
+  gem 'melee'
+  gem 'capybara'
 end
 
 
