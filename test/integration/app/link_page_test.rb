@@ -1,5 +1,4 @@
-require File.expand_path('../../test_config', __FILE__)
-require 'capybara/dsl'
+require File.expand_path('../../../test_config', __FILE__)
 
 feature %{
   When I access the link pages
