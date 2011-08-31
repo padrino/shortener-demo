@@ -11,7 +11,7 @@ gem 'rack-flash'
 gem 'bcrypt-ruby', :require => "bcrypt"
 gem 'sass'
 gem 'haml'
-gem 'mongoid', '~>2.0'
+gem 'mongoid'
 gem 'bson_ext', :require => "mongo"
 gem 'rabl'
 
@@ -22,7 +22,7 @@ group :test do
   gem 'machinist_mongo', :require => 'machinist/mongoid'
   gem 'rr'
   gem 'riot'
-  gem 'riot-mongoid', "2.0.0.beta.rc.7"
+  gem 'riot-mongoid'
   gem 'faker'
   gem 'watchr'
   gem 'rack-test', :require => "rack/test"
